@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Plexi Bot Website // Powered by Isnigma</title>
+  <meta name="description" content="<%=botUsername %>, <%=botCreationDate %>, <%=botStatus %>">
+  <meta name="image" content="<%=botIcon %>">
+       
+     <% if(botStatus =='Status: Accepted'){ %>
+    <meta name="theme-color" content="#34A853">
+    <% } %>
+    
+       <% if(botStatus =='Status: Awaiting invite to Verification Center'){ %>
+     <meta name="theme-color" content="#FBBC05">
+    <% } %>
+    
+     <% if(botStatus =='Status: Denied'){ %>
+      <meta name="theme-color" content="#EA4335">
+    <% } %>
+    
+  <meta name="keywords" content="Isnigma, Discord Bot, isnigma, discord bot, bot, isnigma website,">
+  </head>
+  <center>
+  <body>
+    <div class="botUsername">
+    <%=botUsername %>
+    </div>
+    <div class="botOwner">
+      
+    <%=botOwner %>
+    </div>
+    <div class="botPrefix">
+      <%=botPrefix %>
+    </div>
+    <div class="botStatus">
+      <% console.log(botUsername) %>
+      <%=botStatus %>
+    </div>
+    <div class="botCreationDate">
+      <%=botCreationDate %>
+    </div>
+<img class="BotImage" src="<%= botIcon %>" />
+</center>
+    <div class="logo_footer">
+      <p class="version">
+        Version 0.0.1, API By Plexi Devlopment, Website by
+        <img class="logo"src="https://cdn.discordapp.com/attachments/492102826944888832/502913594053230595/IsnigmaLogo_1.png">
+      </p>
+    </div>
+    <style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+      div.logo_footer {
+border: 3px solid black, white ;
+        border-radius: 25px;
+        background:#FAFAFA;
+        font-size: 30px;
+}
+p.version {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+      }
+      
+      img.logo {
+    width:100px; 
+    height: auto;
+}
+      img.botImage{
+ border-radius: 50%;
+      }
+    </style>
+  </body>
+</html>
